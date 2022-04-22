@@ -1,0 +1,36 @@
+#title {
+    margin-top: 2%;
+}
+
+#app {
+    margin-top: 4.5%;
+}
+
+.output {
+    margin-top: 8px;
+    padding: 5px;
+    /*height: 494px;*/
+    border-radius: 3px;
+    border: 1px solid lightgray;
+    word-wrap: break-word;
+    /*overflow: scroll;*/
+}
+
+.display-4 {
+    margin-bottom: 1%;
+}
+
+/* Split the screen in half */
+.split {
+    width: 50%;
+}
+
+/* Control the left side */
+.left {
+    left: 0;
+}
+
+/* Control the right side */
+.right {
+    right: 0;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - JSON Form Maker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet'
+          href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+    <link th:href="@{style.css}" rel="stylesheet">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container" id="title">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm display-4 text-center">JWT decoder</div>
+        </div>
+        <div class="row">
+            <div class="col-sm lead text-center">Decode your OAuth2 tokens!</div>
+        </div>
+    </div>
+    <div class="container" id="app">
+        <div class="row">
+            <div class="col-sm split left">
+                <div class="row">Raw access token</div>
+                <div class="row">
+                    <div class="col-sm output" th:text="${token}"></div>
+                </div>
+            </div>
+            <div class="col-sm split right">
+                <div class="row">Decoded form</div>
+                <div class="row">
+                    <div class="col-sm output" th:text="${payload}"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
