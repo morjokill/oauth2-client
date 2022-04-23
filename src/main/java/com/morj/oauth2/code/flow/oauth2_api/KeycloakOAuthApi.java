@@ -47,6 +47,10 @@ public class KeycloakOAuthApi extends DefaultApi20 {
     }
 
     private static String composeBaseUrlWithRealm(String baseUrl, String realm) {
-        return baseUrl + (baseUrl.endsWith("/") ? "" : "/") + "realms/" + realm;
+        if (baseUrl.contains("realms")) {
+            return baseUrl + (baseUrl.endsWith("/") ? "" : "/") + realm;
+        } else {
+            return baseUrl + (baseUrl.endsWith("/") ? "" : "/") + "auth/realms/" + realm;
+        }
     }
 }
